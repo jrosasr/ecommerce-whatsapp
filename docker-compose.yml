@@ -1,14 +1,14 @@
 services:
-  lunatv-postgres:
+  ecommerce-whatsapp-postgres:
     image: postgres:17
     restart: always
     volumes:
-        - "lunatv-db:/var/lib/postgresql/data"
+        - "ecommerce-whatsapp-db:/var/lib/postgresql/data"
     ports:
-        - "5435:5432"
+        - "54355:5432"
     env_file:
       - .env
 
 volumes:
-  lunatv-db:
+  ecommerce-whatsapp-db:
     external: true
